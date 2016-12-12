@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E2157C3F1DFD296C00A0B12B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2157C3E1DFD296C00A0B12B /* main.cpp */; };
+		E2157C481DFD29B000A0B12B /* block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2157C461DFD29B000A0B12B /* block.cpp */; };
+		E2157C4B1DFE2C2F00A0B12B /* bedrock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2157C4A1DFE2C2F00A0B12B /* bedrock.cpp */; };
+		E2157C611DFE6ED800A0B12B /* cobble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2157C5F1DFE6ED800A0B12B /* cobble.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		E2157C3B1DFD296C00A0B12B /* AlexCraft */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlexCraft; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2157C3E1DFD296C00A0B12B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E2157C451DFD299A00A0B12B /* block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
+		E2157C461DFD29B000A0B12B /* block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = block.cpp; sourceTree = "<group>"; };
+		E2157C491DFE2C1200A0B12B /* bedrock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bedrock.h; sourceTree = "<group>"; };
+		E2157C4A1DFE2C2F00A0B12B /* bedrock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bedrock.cpp; sourceTree = "<group>"; };
+		E2157C5F1DFE6ED800A0B12B /* cobble.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cobble.cpp; sourceTree = "<group>"; };
+		E2157C601DFE6ED800A0B12B /* cobble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cobble.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				E2157C3E1DFD296C00A0B12B /* main.cpp */,
+				E2157C451DFD299A00A0B12B /* block.h */,
+				E2157C461DFD29B000A0B12B /* block.cpp */,
+				E2157C491DFE2C1200A0B12B /* bedrock.h */,
+				E2157C4A1DFE2C2F00A0B12B /* bedrock.cpp */,
+				E2157C601DFE6ED800A0B12B /* cobble.h */,
+				E2157C5F1DFE6ED800A0B12B /* cobble.cpp */,
 			);
 			path = AlexCraft;
 			sourceTree = "<group>";
@@ -119,6 +134,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2157C3F1DFD296C00A0B12B /* main.cpp in Sources */,
+				E2157C4B1DFE2C2F00A0B12B /* bedrock.cpp in Sources */,
+				E2157C611DFE6ED800A0B12B /* cobble.cpp in Sources */,
+				E2157C481DFD29B000A0B12B /* block.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
