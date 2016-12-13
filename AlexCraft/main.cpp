@@ -49,20 +49,20 @@ int main() {
     srand(static_cast<int>(time(0)));
     
     // try a 2d vector of blocks for a world
-    vector<vector<Block *>> world_matrix(16);
+    vector<vector<Block *>> world_matrix(32);
 
-    for (int i = 0; i < 16; i++) {
-        world_matrix[i] = vector<Block *>(16);
+    for (int i = 0; i < 32; i++) {
+        world_matrix[i] = vector<Block *>(32);
     }
     
     // populate matrix with blocks
     for (int row = 0; row < world_matrix.size(); row++) {
         for (int col = 0; col < world_matrix[row].size(); col++) {
-            if (row == 15) {
+            if (row == 31) {
                 world_matrix[row][col] = (new Bedrock);
                 world_matrix[row][col]->set_id(row);
                 world_matrix[row][col]->set_char('B');
-            } else if (row == 14) {
+            } else if (row == 30) {
                 int d = get_rand(1,3);
                 if (d < 3) {
                     world_matrix[row][col] = (new Cobble);
@@ -74,8 +74,8 @@ int main() {
                     world_matrix[row][col]->set_char('B');
                 }
             } else {
-                int d = get_rand(1,16);
-                if (d < 16 - (row + 4)) {
+                int d = get_rand(8,30);
+                if (d <  30 - (row + 8)) {
                     world_matrix[row][col] = (new Dirt);
                     world_matrix[row][col]->set_id(row);
                     world_matrix[row][col]->set_char('D');
@@ -94,58 +94,6 @@ int main() {
         }
         cout << endl;
     }
-    
-    cout << endl;
-    /*
-    for (int row = 0; row < 16; row++) {
-        cout << "row\n";
-        for (int col = 0; col < 16; col++) {
-            cout << "col\n";
-            world_matrix[row][col] = new Cobble;
-        }
-    }
-    
-    for (int row = 0; row < world_matrix.size(); row++) {
-        cout << "row\n";
-        for (int col = 0; col < world_matrix.size(); col++) {
-            cout << "col\n";
-            world_matrix[row][col] = (new Cobble);
-            world_matrix[row][col]->set_id(row);
-            world_matrix[row][col]->set_char('C');
-        }
-    }
-    
-
-    cout << "Print TEST Matrix World:\n";
-    for (int row = 0; row < world_matrix.size(); row++) {
-        for (int col = 0; col < world_matrix[row].size(); col++) {
-            cout << "[" << world_matrix[row][col]->get_char() << "]";
-        }
-    }
-   
-    // DEMO
-    vector<Block *> derived_blocks_container;
-    
-    derived_blocks_container.push_back(new Cobble);
-    derived_blocks_container.push_back(new Cobble);
-    derived_blocks_container.push_back(new Bedrock);
-    derived_blocks_container.push_back(new Bedrock);
-    
-    for(int i = 0; i < derived_blocks_container.size() ; i++) {
-        if (i < 2) {
-            derived_blocks_container[i]->set_id(1);
-            derived_blocks_container[i]->set_char('C');
-        } else {
-            derived_blocks_container[i]->set_id(2);
-            derived_blocks_container[i]->set_char('B');
-        }
-    }
-    
-    for(int i = 0; i < derived_blocks_container.size() ; i++) {
-        cout << derived_blocks_container[i]->get_char() << "  ";
-    }
-
-    */
     
     cout << endl;
     
