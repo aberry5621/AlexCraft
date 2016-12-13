@@ -11,6 +11,7 @@
 		E2157C481DFD29B000A0B12B /* block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2157C461DFD29B000A0B12B /* block.cpp */; };
 		E2157C4B1DFE2C2F00A0B12B /* bedrock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2157C4A1DFE2C2F00A0B12B /* bedrock.cpp */; };
 		E2157C611DFE6ED800A0B12B /* cobble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2157C5F1DFE6ED800A0B12B /* cobble.cpp */; };
+		E29401401DFF76A2005A54F4 /* dirt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E294013F1DFF76A2005A54F4 /* dirt.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		E2157C4A1DFE2C2F00A0B12B /* bedrock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bedrock.cpp; sourceTree = "<group>"; };
 		E2157C5F1DFE6ED800A0B12B /* cobble.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cobble.cpp; sourceTree = "<group>"; };
 		E2157C601DFE6ED800A0B12B /* cobble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cobble.h; sourceTree = "<group>"; };
+		E294013E1DFF76A2005A54F4 /* dirt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dirt.h; sourceTree = "<group>"; };
+		E294013F1DFF76A2005A54F4 /* dirt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dirt.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				E2157C4A1DFE2C2F00A0B12B /* bedrock.cpp */,
 				E2157C601DFE6ED800A0B12B /* cobble.h */,
 				E2157C5F1DFE6ED800A0B12B /* cobble.cpp */,
+				E294013E1DFF76A2005A54F4 /* dirt.h */,
+				E294013F1DFF76A2005A54F4 /* dirt.cpp */,
 			);
 			path = AlexCraft;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				E2157C3F1DFD296C00A0B12B /* main.cpp in Sources */,
 				E2157C4B1DFE2C2F00A0B12B /* bedrock.cpp in Sources */,
 				E2157C611DFE6ED800A0B12B /* cobble.cpp in Sources */,
+				E29401401DFF76A2005A54F4 /* dirt.cpp in Sources */,
 				E2157C481DFD29B000A0B12B /* block.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +263,7 @@
 				E2157C441DFD296C00A0B12B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
